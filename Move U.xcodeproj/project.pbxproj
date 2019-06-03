@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C86B69B522A5614D008AC0DF /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69B422A5614D008AC0DF /* Exercise.swift */; };
+		C86B69BA22A5648E008AC0DF /* Exercises.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69B922A5648E008AC0DF /* Exercises.storyboard */; };
+		C86B69BF22A56781008AC0DF /* Workouts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69BE22A56781008AC0DF /* Workouts.storyboard */; };
+		C86B69C422A568F5008AC0DF /* Nutrition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69C322A568F5008AC0DF /* Nutrition.storyboard */; };
+		C86B69C922A56953008AC0DF /* Suplements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69C822A56953008AC0DF /* Suplements.storyboard */; };
+		C86B69CC22A56DF0008AC0DF /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69CB22A56DF0008AC0DF /* ExercisesViewController.swift */; };
+		C86B69CE22A57644008AC0DF /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69CD22A57644008AC0DF /* Workout.swift */; };
+		C86B69D022A576F8008AC0DF /* Nutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69CF22A576F8008AC0DF /* Nutrient.swift */; };
+		C86B69D222A577DB008AC0DF /* Suplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69D122A577DB008AC0DF /* Suplement.swift */; };
+		C86B69D422A585FA008AC0DF /* ExerciseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69D322A585FA008AC0DF /* ExerciseViewCell.swift */; };
+		C86B69D622A58BE1008AC0DF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69D522A58BE1008AC0DF /* SampleData.swift */; };
 		C88812052294235300CA250F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88812042294235300CA250F /* AppDelegate.swift */; };
 		C88812072294235300CA250F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88812062294235300CA250F /* ViewController.swift */; };
 		C888120A2294235300CA250F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88812082294235300CA250F /* Main.storyboard */; };
@@ -15,6 +26,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C86B69B422A5614D008AC0DF /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		C86B69B922A5648E008AC0DF /* Exercises.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercises.storyboard; sourceTree = "<group>"; };
+		C86B69BE22A56781008AC0DF /* Workouts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workouts.storyboard; sourceTree = "<group>"; };
+		C86B69C322A568F5008AC0DF /* Nutrition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nutrition.storyboard; sourceTree = "<group>"; };
+		C86B69C822A56953008AC0DF /* Suplements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Suplements.storyboard; sourceTree = "<group>"; };
+		C86B69CB22A56DF0008AC0DF /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
+		C86B69CD22A57644008AC0DF /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		C86B69CF22A576F8008AC0DF /* Nutrient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrient.swift; sourceTree = "<group>"; };
+		C86B69D122A577DB008AC0DF /* Suplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suplement.swift; sourceTree = "<group>"; };
+		C86B69D322A585FA008AC0DF /* ExerciseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewCell.swift; sourceTree = "<group>"; };
+		C86B69D522A58BE1008AC0DF /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		C88812012294235300CA250F /* Move U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Move U.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88812042294235300CA250F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C88812062294235300CA250F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +57,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C86B69B322A56120008AC0DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69B422A5614D008AC0DF /* Exercise.swift */,
+				C86B69CD22A57644008AC0DF /* Workout.swift */,
+				C86B69CF22A576F8008AC0DF /* Nutrient.swift */,
+				C86B69D122A577DB008AC0DF /* Suplement.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C86B69B622A56449008AC0DF /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69B722A5645C008AC0DF /* Views */,
+				C86B69B822A56463008AC0DF /* Controllers */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		C86B69B722A5645C008AC0DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69B922A5648E008AC0DF /* Exercises.storyboard */,
+				C86B69CA22A56DB4008AC0DF /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C86B69B822A56463008AC0DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69CB22A56DF0008AC0DF /* ExercisesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C86B69BB22A5675A008AC0DF /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69BD22A5676C008AC0DF /* Controllers */,
+				C86B69BC22A56763008AC0DF /* Views */,
+			);
+			path = Workouts;
+			sourceTree = "<group>";
+		};
+		C86B69BC22A56763008AC0DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69BE22A56781008AC0DF /* Workouts.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C86B69BD22A5676C008AC0DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C86B69C022A568A7008AC0DF /* Nutrition */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69C222A568B5008AC0DF /* Controllers */,
+				C86B69C122A568AF008AC0DF /* Views */,
+			);
+			path = Nutrition;
+			sourceTree = "<group>";
+		};
+		C86B69C122A568AF008AC0DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69C322A568F5008AC0DF /* Nutrition.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C86B69C222A568B5008AC0DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C86B69C522A56936008AC0DF /* Suplements */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69C722A56943008AC0DF /* Controllers */,
+				C86B69C622A5693E008AC0DF /* Views */,
+			);
+			path = Suplements;
+			sourceTree = "<group>";
+		};
+		C86B69C622A5693E008AC0DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69C822A56953008AC0DF /* Suplements.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C86B69C722A56943008AC0DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C86B69CA22A56DB4008AC0DF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C86B69D322A585FA008AC0DF /* ExerciseViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C88811F82294235300CA250F = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +213,8 @@
 		C88812172294239600CA250F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C86B69B322A56120008AC0DF /* Models */,
+				C86B69D522A58BE1008AC0DF /* SampleData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -81,6 +222,10 @@
 		C8881218229423A600CA250F /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C86B69C522A56936008AC0DF /* Suplements */,
+				C86B69C022A568A7008AC0DF /* Nutrition */,
+				C86B69BB22A5675A008AC0DF /* Workouts */,
+				C86B69B622A56449008AC0DF /* Exercises */,
 				C888121B2294245C00CA250F /* Main */,
 				C88812192294244800CA250F /* Launch */,
 			);
@@ -195,8 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C888120F2294235700CA250F /* LaunchScreen.storyboard in Resources */,
+				C86B69BF22A56781008AC0DF /* Workouts.storyboard in Resources */,
 				C888120C2294235700CA250F /* Assets.xcassets in Resources */,
+				C86B69BA22A5648E008AC0DF /* Exercises.storyboard in Resources */,
 				C888120A2294235300CA250F /* Main.storyboard in Resources */,
+				C86B69C922A56953008AC0DF /* Suplements.storyboard in Resources */,
+				C86B69C422A568F5008AC0DF /* Nutrition.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +358,13 @@
 			files = (
 				C88812072294235300CA250F /* ViewController.swift in Sources */,
 				C88812052294235300CA250F /* AppDelegate.swift in Sources */,
+				C86B69D022A576F8008AC0DF /* Nutrient.swift in Sources */,
+				C86B69CC22A56DF0008AC0DF /* ExercisesViewController.swift in Sources */,
+				C86B69D422A585FA008AC0DF /* ExerciseViewCell.swift in Sources */,
+				C86B69CE22A57644008AC0DF /* Workout.swift in Sources */,
+				C86B69D222A577DB008AC0DF /* Suplement.swift in Sources */,
+				C86B69D622A58BE1008AC0DF /* SampleData.swift in Sources */,
+				C86B69B522A5614D008AC0DF /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
