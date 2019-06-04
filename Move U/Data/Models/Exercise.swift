@@ -8,28 +8,20 @@
 
 import Foundation
 
-class Exercise: CustomStringConvertible{
+class Exercise{
     var name: String?
     var photo: String?
     var area: String?
     var dificulty: String?
-    var prerequisites: [Exercise]?
+    var description: String?
     
-    
-    
-    public var description: String {
-        return """
-
-        """
-    }
-    
-    convenience init(name: String? = nil, photo: String? = nil, area: String? = nil, dificulty: String? = nil, prerequisites: [Exercise]? = nil) {
+    convenience init(name: String? = nil, photo: String? = nil, area: String? = nil, dificulty: String? = nil, description: String? = nil) {
         self.init()
         self.name = name
         self.photo = photo
         self.area = area
         self.dificulty = dificulty
-        self.prerequisites = prerequisites
+        self.description = description
         
     }
 }

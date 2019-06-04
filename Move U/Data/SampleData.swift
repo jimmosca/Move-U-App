@@ -12,11 +12,13 @@ var defaultExercises: [Exercise] = [
                                     Exercise(name: "Dead Hang",
                                              photo: "deadHang",
                                              area: "Upper body",
-                                             dificulty: "Low"),
+                                             dificulty: "Low",
+                                             description: "Cuelgate de una barra que te permita estirarte por completo e intenta eliminar la resistencia que generan los musculos sobre tus hombros. Realiza de 1-3 series a 30 segundos cada una."),
                                     Exercise(name: "Inverted Hang",
                                              photo: "invertedHang",
                                              area: "Upper body",
-                                             dificulty: "Low/Medium")
+                                             dificulty: "Low/Medium",
+                                             description: "Cuelgate de una barra que te permita estirarte por completo e intenta eliminar la resistencia que generan los musculos sobre tus hombros. Realiza de 1-3 series a 30 segundos cada una.")
 ]
 
 var defaultWorkouts: [Workout] = [

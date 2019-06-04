@@ -16,6 +16,21 @@ class ExerciseViewController: UIViewController {
         super.viewDidLoad()
         configure(tableView: eTableView)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let tableViewCell = sender as? UITableViewCell,
+            let indexPath = eTableView.indexPath(for: tableViewCell) else {
+                return
+        }
+        // Obtenemos el estudiante seleccionado
+        let exerciseSelected = defaultExercises[indexPath.row]
+        
+        // Primero casteamos el ViewController destino a nuestro ViewController del detalle del estudiante
+        let destinationViewController = segue.destination as? ExerciseDetailViewController
+        
+        // Segundo al ViewController le pasamos los datos del estudiante seleccionado
+        destinationViewController?.set(exerciseData: exerciseSelected)
+    }
    
 }
 
