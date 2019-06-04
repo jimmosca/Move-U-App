@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QUI-f2-GbE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jMh-P1-ZWs">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,16 +15,16 @@
         <!--Workouts-->
         <scene sceneID="7Ve-iw-bQY">
             <objects>
-                <viewController id="QUI-f2-GbE" sceneMemberID="viewController">
+                <viewController id="QUI-f2-GbE" customClass="WorkoutsViewController" customModule="Move_U" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xuz-BW-2qf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LuY-mQ-tnv">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="135" id="FdM-y1-lpj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkoutViewCell" rowHeight="135" id="FdM-y1-lpj" customClass="WorkoutViewCell" customModule="Move_U" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FdM-y1-lpj" id="inv-gA-tgn">
@@ -47,10 +47,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6R-Tu-tTd">
-                                                    <rect key="frame" x="25" y="70" width="325" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="tSt-gn-NWz"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="25" y="70" width="325" height="95.5"/>
                                                     <string key="text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -71,6 +68,13 @@
                                                 <constraint firstItem="J6R-Tu-tTd" firstAttribute="top" secondItem="sac-AA-7iy" secondAttribute="bottomMargin" constant="10" id="rNy-4J-XsZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="wGoalLabel" destination="J6R-Tu-tTd" id="H4x-kL-xRc"/>
+                                            <outlet property="wImageView" destination="sMx-eA-A6p" id="5J3-De-ltE"/>
+                                            <outlet property="wLevelLabel" destination="sac-AA-7iy" id="4KU-7G-1P4"/>
+                                            <outlet property="wNameLabel" destination="ZBt-Tc-xnq" id="fdZ-O4-v34"/>
+                                            <outlet property="wView" destination="inv-gA-tgn" id="Hwq-eb-XmC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -84,9 +88,31 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W2C-xI-SkI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Workouts" image="workout" id="DOK-pe-IDD"/>
+                    <navigationItem key="navigationItem" title="Workouts" id="SJI-Nk-5FK"/>
+                    <connections>
+                        <outlet property="wTableView" destination="LuY-mQ-tnv" id="aI9-19-kPu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPv-p7-Nh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1431.2" y="145.27736131934034"/>
+        </scene>
+        <!--Workouts-->
+        <scene sceneID="fw5-nz-IhW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jMh-P1-ZWs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Workouts" image="workout" id="DOK-pe-IDD"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QNk-ca-n7Y">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QUI-f2-GbE" kind="relationship" relationship="rootViewController" id="C4H-nb-1s4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndD-lF-HQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="492" y="145.27736131934034"/>
         </scene>

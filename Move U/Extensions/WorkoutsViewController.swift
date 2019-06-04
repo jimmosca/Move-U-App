@@ -1,25 +1,25 @@
 //
-//  ExercisesViewController.swift
+//  WorkoutsViewController.swift
 //  Move U
 //
-//  Created by Jaime Casado Aparicio on 3/6/19.
+//  Created by Jaime Casado Aparicio on 4/6/19.
 //  Copyright © 2019 Jaime Casado Aparicio. All rights reserved.
 //
 
 import UIKit
 
-class ExerciseViewController: UIViewController {
+class WorkoutsViewController: UIViewController {
     
-    @IBOutlet weak var eTableView: UITableView!
+    @IBOutlet weak var wTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure(tableView: eTableView)
+        configure(tableView: wTableView)
     }
-   
+    
 }
 
-extension ExerciseViewController: UITableViewDelegate, UITableViewDataSource{
+extension WorkoutsViewController: UITableViewDelegate, UITableViewDataSource{
     
     private func configure(tableView: UITableView){
         tableView.dataSource = self
@@ -27,18 +27,18 @@ extension ExerciseViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return defaultExercises.count
+        return defaultWorkouts.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return ExerciseViewCell.eRowHeight
+        return WorkoutViewCell.wRowHeight
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ExerciseViewCell.eIdentifier,
+        let cell = tableView.dequeueReusableCell(withIdentifier: WorkoutViewCell.wIdentifier,
                                                  for: indexPath)
         
-            (cell as? ExerciseViewCell)?.update(data: defaultExercises[indexPath.row])
+        (cell as? WorkoutViewCell)?.update(data: defaultWorkouts[indexPath.row])
         
         return cell
     }

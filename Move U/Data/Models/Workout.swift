@@ -27,8 +27,12 @@ class Workout: CustomStringConvertible{
         self.init()
         self.name = name
         self.photo = photo
-        self.goal = goal
-        self.level = level
+        guard let goalData = goal,
+              let levelData = level else {
+                    return
+        }
+        self.goal = "Objetivo: " + goalData
+        self.level = "Nivel: " + levelData
         self.exercises = exercises
         
     }

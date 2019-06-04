@@ -12,6 +12,9 @@ class ExerciseViewCell: UITableViewCell{
     
     static let eIdentifier = String(describing: ExerciseViewCell.self)
     
+    static let eRowHeight: CGFloat = 210.0
+    
+    @IBOutlet weak var eView: UIView!
     @IBOutlet weak var eNameLabel: UILabel!
     @IBOutlet weak var eAreaLabel: UILabel!
     @IBOutlet weak var eDificultyLabel: UILabel!
@@ -27,7 +30,7 @@ class ExerciseViewCell: UITableViewCell{
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        configure(view: eView)
     }
     
     func update(data: Exercise?){
