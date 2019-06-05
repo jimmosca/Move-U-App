@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Exercises-->
+        <!--Exercise View Controller-->
         <scene sceneID="VBV-Z5-LTk">
             <objects>
                 <viewController id="bO8-bn-rdW" customClass="ExerciseViewController" customModule="Move_U" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +96,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gxc-ad-iKN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Exercises" id="9Ss-6g-BSr"/>
+                    <navigationItem key="navigationItem" id="9Ss-6g-BSr">
+                        <barButtonItem key="rightBarButtonItem" title=" " image="add" id="Dpi-wx-Sg2"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="eTableView" destination="aVM-yu-37x" id="gZV-5G-qTN"/>
                     </connections>
@@ -156,6 +158,17 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAS-re-HwZ">
+                                        <rect key="frame" x="142" y="589" width="91" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <state key="normal" title="Eliminar">
+                                            <color key="titleColor" red="1" green="0.092869963399396571" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.62348202720207246" green="0.057902753046438049" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteTapped:" destination="hW1-7X-m3s" eventType="primaryActionTriggered" id="UIF-t1-55D"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -168,9 +181,12 @@
                                     <constraint firstAttribute="trailing" secondItem="9eN-1I-21r" secondAttribute="trailing" constant="50" id="XwL-IX-YDr"/>
                                     <constraint firstAttribute="trailing" secondItem="iTj-aq-zE8" secondAttribute="trailing" constant="16" id="iOZ-uL-0Kx"/>
                                     <constraint firstItem="MS1-r9-rDK" firstAttribute="leading" secondItem="deL-Du-Ne2" secondAttribute="leading" id="kdy-sC-e1B"/>
+                                    <constraint firstItem="kAS-re-HwZ" firstAttribute="leading" secondItem="deL-Du-Ne2" secondAttribute="leading" constant="142" id="mo6-CH-KyI"/>
                                     <constraint firstAttribute="trailing" secondItem="MS1-r9-rDK" secondAttribute="trailing" id="qcf-Xb-a1P"/>
                                     <constraint firstItem="9eN-1I-21r" firstAttribute="top" secondItem="deL-Du-Ne2" secondAttribute="top" constant="25" id="s8h-K2-IrF"/>
+                                    <constraint firstAttribute="bottom" secondItem="kAS-re-HwZ" secondAttribute="bottom" constant="60" id="tr2-YR-QZx"/>
                                     <constraint firstItem="MS1-r9-rDK" firstAttribute="top" secondItem="iTj-aq-zE8" secondAttribute="bottom" constant="20" id="v4G-It-uhO"/>
+                                    <constraint firstAttribute="trailing" secondItem="kAS-re-HwZ" secondAttribute="trailing" constant="142" id="xWv-bq-RsR"/>
                                     <constraint firstItem="AVZ-oB-gvw" firstAttribute="top" secondItem="9eN-1I-21r" secondAttribute="bottom" constant="15" id="zh4-DY-T6J"/>
                                 </constraints>
                             </view>
@@ -217,6 +233,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="50" height="50"/>
         <image name="exercises" width="30" height="30"/>
     </resources>
 </document>

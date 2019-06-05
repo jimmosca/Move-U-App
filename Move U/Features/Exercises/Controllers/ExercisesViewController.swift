@@ -12,9 +12,16 @@ class ExerciseViewController: UIViewController {
     
     @IBOutlet weak var eTableView: UITableView!
     
+    private var data: [Exercise]? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure(tableView: eTableView)
+        loadData()
+        eTableView.reloadData()
+    }
+    func loadData(){
+        data = defaultExercises
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -26,10 +33,17 @@ class ExerciseViewController: UIViewController {
         let exerciseSelected = defaultExercises[indexPath.row]
         
         // Primero casteamos el ViewController destino a nuestro ViewController del detalle del estudiante
-        let destinationViewController = segue.destination as? ExerciseDetailViewController
+        if let destinationViewController = segue.destination as? ExerciseDetailViewController{
+            
+            destinationViewController.delegate = self
+            // Segundo al ViewController le pasamos los datos del estudiante seleccionado
+            destinationViewController.set(exerciseData: exerciseSelected)
+        }
         
-        // Segundo al ViewController le pasamos los datos del estudiante seleccionado
-        destinationViewController?.set(exerciseData: exerciseSelected)
+        
+        //if let nav = segue.destination as? UINavigationController, let ExerciseDetailViewController = nav.topViewController as? ExerciseDetailViewController {
+          //  ExerciseDetailViewController.delegate = self
+        //}
     }
    
 }
@@ -59,4 +73,28 @@ extension ExerciseViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     
+}
+
+extension ExerciseViewController: ExerciseDetailDelegate {
+    func onDelete(exerciseName: String?) {
+        guard let deletedExerciseName = exerciseName else {
+            return
+        }
+        
+        removeAll(exerciseName: deletedExerciseName)
+       
+        
+        eTableView.reloadData()
+    }
+    
+    func removeAll(exerciseName: String) {
+        var count: Int = 0
+        for exercise in defaultExercises {
+            if(exercise.name == exerciseName){
+                defaultExercises.remove(at: count)
+            }
+            count += 1
+        }
+        
+    }
 }

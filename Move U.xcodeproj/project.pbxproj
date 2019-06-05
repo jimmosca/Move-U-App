@@ -81,6 +81,13 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		C85AAFDB22A7F8AD00DE9ED6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		C86B69B322A56120008AC0DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,7 +149,7 @@
 			children = (
 				C84EDAE922A69A8900211BA2 /* WorkoutsViewController.swift */,
 			);
-			path = Controllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		C86B69C022A568A7008AC0DF /* Nutrition */ = {
@@ -157,6 +164,7 @@
 		C86B69C122A568AF008AC0DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C85AAFDB22A7F8AD00DE9ED6 /* Cells */,
 				C86B69C322A568F5008AC0DF /* Nutrition.storyboard */,
 			);
 			path = Views;
@@ -166,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		C86B69C522A56936008AC0DF /* Suplements */ = {
@@ -190,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		C86B69CA22A56DB4008AC0DF /* Cells */ = {

@@ -8,6 +8,11 @@
 
 import UIKit
 
+
+protocol ExerciseDetailDelegate {
+    func onDelete(exerciseName: String?)
+}
+
 class ExerciseDetailViewController: UIViewController {
     
     @IBOutlet weak var eExerciseName: UILabel!
@@ -17,6 +22,29 @@ class ExerciseDetailViewController: UIViewController {
     
     @IBOutlet weak var eExerciseImage: UIImageView!
     
+    
+    @IBAction func deleteTapped(_ sender: UIButton) {
+        // create alert
+        let alert = UIAlertController(title: "UIAlertController",
+                                      message: "Would you like to continue learning how to use iOS alerts?",
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        // add buttons
+        alert.addAction(UIAlertAction(title: "Continue",
+                                      style: UIAlertActionStyle.destructive,
+                                      handler: { action in
+                                        self.navigateBack();
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel",
+                                      style: UIAlertActionStyle.default,
+                                      handler: nil))
+        // show alert
+        self.present(alert,
+                     animated: true,
+                     completion: nil)
+    }
+    
+    
+    var delegate: ExerciseDetailDelegate?
     private var exerciseData: Exercise? = nil
     
     override func viewDidLoad() {
@@ -63,4 +91,13 @@ class ExerciseDetailViewController: UIViewController {
         }
         eExerciseImage.image = UIImage(named: image)
     }
+    
+    private func navigateBack() {
+        // Notify delegate to delete this element
+        delegate?.onDelete(exerciseName: exerciseData?.name)
+        print("hijo de puta")
+        // Navigate back to previous view controller
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
