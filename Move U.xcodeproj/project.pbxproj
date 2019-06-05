@@ -11,6 +11,7 @@
 		C84EDAEA22A69A8900211BA2 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EDAE922A69A8900211BA2 /* WorkoutsViewController.swift */; };
 		C84EDAED22A6A65600211BA2 /* WorkoutViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EDAEC22A6A65600211BA2 /* WorkoutViewCell.swift */; };
 		C84EDAEF22A6C5DB00211BA2 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EDAEE22A6C5DB00211BA2 /* ExerciseDetailViewController.swift */; };
+		C85AAFDD22A82E4F00DE9ED6 /* ExerciseFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85AAFDC22A82E4F00DE9ED6 /* ExerciseFormViewController.swift */; };
 		C86B69B522A5614D008AC0DF /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69B422A5614D008AC0DF /* Exercise.swift */; };
 		C86B69BA22A5648E008AC0DF /* Exercises.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69B922A5648E008AC0DF /* Exercises.storyboard */; };
 		C86B69BF22A56781008AC0DF /* Workouts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69BE22A56781008AC0DF /* Workouts.storyboard */; };
@@ -34,6 +35,7 @@
 		C84EDAE922A69A8900211BA2 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutsViewController.swift; path = "Move U/Extensions/WorkoutsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		C84EDAEC22A6A65600211BA2 /* WorkoutViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewCell.swift; sourceTree = "<group>"; };
 		C84EDAEE22A6C5DB00211BA2 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		C85AAFDC22A82E4F00DE9ED6 /* ExerciseFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFormViewController.swift; sourceTree = "<group>"; };
 		C86B69B422A5614D008AC0DF /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		C86B69B922A5648E008AC0DF /* Exercises.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercises.storyboard; sourceTree = "<group>"; };
 		C86B69BE22A56781008AC0DF /* Workouts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workouts.storyboard; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				C86B69CB22A56DF0008AC0DF /* ExercisesViewController.swift */,
 				C84EDAEE22A6C5DB00211BA2 /* ExerciseDetailViewController.swift */,
+				C85AAFDC22A82E4F00DE9ED6 /* ExerciseFormViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85AAFDD22A82E4F00DE9ED6 /* ExerciseFormViewController.swift in Sources */,
 				C88812072294235300CA250F /* ViewController.swift in Sources */,
 				C88812052294235300CA250F /* AppDelegate.swift in Sources */,
 				C86B69D022A576F8008AC0DF /* Nutrient.swift in Sources */,

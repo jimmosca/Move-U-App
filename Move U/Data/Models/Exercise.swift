@@ -15,6 +15,7 @@ class Exercise{
     var dificulty: String?
     var description: String?
     
+    
     convenience init(name: String? = nil, photo: String? = nil, area: String? = nil, dificulty: String? = nil, description: String? = nil) {
         self.init()
         self.name = name

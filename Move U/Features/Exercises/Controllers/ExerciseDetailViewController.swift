@@ -35,7 +35,7 @@ class ExerciseDetailViewController: UIViewController {
                                         self.navigateBack();
         }))
         alert.addAction(UIAlertAction(title: "Cancel",
-                                      style: UIAlertActionStyle.default,
+                                      style: UIAlertActionStyle.cancel,
                                       handler: nil))
         // show alert
         self.present(alert,
@@ -95,7 +95,6 @@ class ExerciseDetailViewController: UIViewController {
     private func navigateBack() {
         // Notify delegate to delete this element
         delegate?.onDelete(exerciseName: exerciseData?.name)
-        print("hijo de puta")
         // Navigate back to previous view controller
         navigationController?.popViewController(animated: true)
     }
