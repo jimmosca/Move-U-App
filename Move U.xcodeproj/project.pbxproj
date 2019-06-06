@@ -23,6 +23,13 @@
 		C86B69D222A577DB008AC0DF /* Suplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69D122A577DB008AC0DF /* Suplement.swift */; };
 		C86B69D422A585FA008AC0DF /* ExerciseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69D322A585FA008AC0DF /* ExerciseViewCell.swift */; };
 		C86B69D622A58BE1008AC0DF /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69D522A58BE1008AC0DF /* SampleData.swift */; };
+		C87C06DF22A91BE900F437C7 /* NutrientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C06DE22A91BE900F437C7 /* NutrientViewCell.swift */; };
+		C87C06E122A91C4400F437C7 /* NutrientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C06E022A91C4400F437C7 /* NutrientsViewController.swift */; };
+		C87C06E322A92A1600F437C7 /* WorkoutDetailExerciseViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C06E222A92A1600F437C7 /* WorkoutDetailExerciseViewCell.swift */; };
+		C87C06E522A9307000F437C7 /* WorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C06E422A9307000F437C7 /* WorkoutDetailViewController.swift */; };
+		C87C06E722A941F400F437C7 /* WorkoutFormViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C06E622A941F400F437C7 /* WorkoutFormViewControler.swift */; };
+		C87C06E922A95A2700F437C7 /* NutrientDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C06E822A95A2700F437C7 /* NutrientDetailViewController.swift */; };
+		C87C06EB22A96B3B00F437C7 /* NutrientFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C06EA22A96B3B00F437C7 /* NutrientFormViewController.swift */; };
 		C88812052294235300CA250F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88812042294235300CA250F /* AppDelegate.swift */; };
 		C88812072294235300CA250F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88812062294235300CA250F /* ViewController.swift */; };
 		C888120A2294235300CA250F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88812082294235300CA250F /* Main.storyboard */; };
@@ -47,6 +54,13 @@
 		C86B69D122A577DB008AC0DF /* Suplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suplement.swift; sourceTree = "<group>"; };
 		C86B69D322A585FA008AC0DF /* ExerciseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewCell.swift; sourceTree = "<group>"; };
 		C86B69D522A58BE1008AC0DF /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		C87C06DE22A91BE900F437C7 /* NutrientViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientViewCell.swift; sourceTree = "<group>"; };
+		C87C06E022A91C4400F437C7 /* NutrientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientsViewController.swift; sourceTree = "<group>"; };
+		C87C06E222A92A1600F437C7 /* WorkoutDetailExerciseViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailExerciseViewCell.swift; sourceTree = "<group>"; };
+		C87C06E422A9307000F437C7 /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
+		C87C06E622A941F400F437C7 /* WorkoutFormViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFormViewControler.swift; sourceTree = "<group>"; };
+		C87C06E822A95A2700F437C7 /* NutrientDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientDetailViewController.swift; sourceTree = "<group>"; };
+		C87C06EA22A96B3B00F437C7 /* NutrientFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutrientFormViewController.swift; sourceTree = "<group>"; };
 		C88812012294235300CA250F /* Move U.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Move U.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88812042294235300CA250F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C88812062294235300CA250F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				C84EDAEC22A6A65600211BA2 /* WorkoutViewCell.swift */,
+				C87C06E222A92A1600F437C7 /* WorkoutDetailExerciseViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -86,6 +101,7 @@
 		C85AAFDB22A7F8AD00DE9ED6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C87C06DE22A91BE900F437C7 /* NutrientViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -141,8 +157,8 @@
 		C86B69BC22A56763008AC0DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C84EDAEB22A6A63F00211BA2 /* Cells */,
 				C86B69BE22A56781008AC0DF /* Workouts.storyboard */,
+				C84EDAEB22A6A63F00211BA2 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				C84EDAE922A69A8900211BA2 /* WorkoutsViewController.swift */,
+				C87C06E422A9307000F437C7 /* WorkoutDetailViewController.swift */,
+				C87C06E622A941F400F437C7 /* WorkoutFormViewControler.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -176,6 +194,9 @@
 		C86B69C222A568B5008AC0DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C87C06E022A91C4400F437C7 /* NutrientsViewController.swift */,
+				C87C06E822A95A2700F437C7 /* NutrientDetailViewController.swift */,
+				C87C06EA22A96B3B00F437C7 /* NutrientFormViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -396,14 +417,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C85AAFDD22A82E4F00DE9ED6 /* ExerciseFormViewController.swift in Sources */,
+				C87C06E722A941F400F437C7 /* WorkoutFormViewControler.swift in Sources */,
 				C88812072294235300CA250F /* ViewController.swift in Sources */,
 				C88812052294235300CA250F /* AppDelegate.swift in Sources */,
+				C87C06E322A92A1600F437C7 /* WorkoutDetailExerciseViewCell.swift in Sources */,
+				C87C06EB22A96B3B00F437C7 /* NutrientFormViewController.swift in Sources */,
+				C87C06E122A91C4400F437C7 /* NutrientsViewController.swift in Sources */,
 				C86B69D022A576F8008AC0DF /* Nutrient.swift in Sources */,
 				C86B69CC22A56DF0008AC0DF /* ExercisesViewController.swift in Sources */,
 				C86B69D422A585FA008AC0DF /* ExerciseViewCell.swift in Sources */,
 				C84EDAEA22A69A8900211BA2 /* WorkoutsViewController.swift in Sources */,
 				C86B69CE22A57644008AC0DF /* Workout.swift in Sources */,
 				C86B69D222A577DB008AC0DF /* Suplement.swift in Sources */,
+				C87C06E922A95A2700F437C7 /* NutrientDetailViewController.swift in Sources */,
+				C87C06E522A9307000F437C7 /* WorkoutDetailViewController.swift in Sources */,
+				C87C06DF22A91BE900F437C7 /* NutrientViewCell.swift in Sources */,
 				C84EDAE822A68DBC00211BA2 /* TableViewCellExtension.swift in Sources */,
 				C84EDAEF22A6C5DB00211BA2 /* ExerciseDetailViewController.swift in Sources */,
 				C86B69D622A58BE1008AC0DF /* SampleData.swift in Sources */,

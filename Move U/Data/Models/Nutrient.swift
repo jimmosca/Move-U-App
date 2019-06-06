@@ -13,7 +13,7 @@ class Nutrient: CustomStringConvertible{
     var photo: String?
     var funtion: String?
     var recomendedQty: String?
-    var calorieGram: Int?
+    var calorieGram: String?
     
     
     
@@ -29,7 +29,11 @@ class Nutrient: CustomStringConvertible{
         self.photo = photo
         self.funtion = funtion
         self.recomendedQty = recomendedQty
-        self.calorieGram = calorieGram
+        guard let calorie = calorieGram else {
+            return
+            
+        }
+        self.calorieGram = "\(calorie) kCal/g"
         
     }
 }

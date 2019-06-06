@@ -1,45 +1,45 @@
 //
-//  WorkoutsViewController.swift
+//  NutrientsViewController.swift
 //  Move U
 //
-//  Created by Jaime Casado Aparicio on 4/6/19.
+//  Created by Jaime Casado Aparicio on 6/6/19.
 //  Copyright © 2019 Jaime Casado Aparicio. All rights reserved.
 //
 
 import UIKit
 
-class WorkoutsViewController: UIViewController {
+class NutrientsViewController: UIViewController {
     
-    @IBOutlet weak var wTableView: UITableView!
+    @IBOutlet weak var nTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure(tableView: wTableView)
+        configure(tableView: nTableView)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tableViewCell = sender as? UITableViewCell,
-            let indexPath = wTableView.indexPath(for: tableViewCell) else {
+            let indexPath = nTableView.indexPath(for: tableViewCell) else {
                 return
         }
         
-        let exerciseSelected = defaultWorkouts[indexPath.row]
+        let nutrientSelected = defaultNutrients[indexPath.row]
         
-        if let destinationViewController = segue.destination as? WorkoutDetailViewController{
+        if let destinationViewController = segue.destination as? NutrientDetailViewController{
             // Especificas que esta clase es el delegate del DetailView
             destinationViewController.delegate = self
-            destinationViewController.set(workoutData: exerciseSelected)
+            destinationViewController.set(nutrientData: nutrientSelected)
         }
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        wTableView.reloadData()
+        nTableView.reloadData()
     }
     
 }
 
-extension WorkoutsViewController: UITableViewDelegate, UITableViewDataSource{
+extension NutrientsViewController: UITableViewDelegate, UITableViewDataSource{
     
     private func configure(tableView: UITableView){
         tableView.dataSource = self
@@ -47,40 +47,40 @@ extension WorkoutsViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return defaultWorkouts.count
+        return defaultNutrients.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return WorkoutViewCell.wRowHeight
+        return NutrientViewCell.nRowHeight
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: WorkoutViewCell.wIdentifier,
+        let cell = tableView.dequeueReusableCell(withIdentifier: NutrientViewCell.nIdentifier,
                                                  for: indexPath)
         
-        (cell as? WorkoutViewCell)?.update(data: defaultWorkouts[indexPath.row])
+        (cell as? NutrientViewCell)?.update(data: defaultNutrients[indexPath.row])
         
         return cell
     }
     
-    
 }
 
-extension WorkoutsViewController: WorkoutDetailDelegate{
-    func onDelete(workoutName: String?) {
-        guard let deletedWorkoutName = workoutName else {
+extension NutrientsViewController: NutrientDetailDelegate{
+    func onDelete(nutrientName: String?) {
+        guard let deletedNutrientName = nutrientName else {
             return
         }
         
         // Creacion de array solo con los nombres
-        let aux = defaultWorkouts.compactMap{ $0.name }
+        let aux = defaultNutrients.compactMap{ $0.name }
         // Obtener el index del nombre que es pasado por parametro
-        let indice = aux.index(of: deletedWorkoutName)
+        let indice = aux.index(of: deletedNutrientName)
         if let index = indice {
             // Se borra de la coleccion original el elemento que tiene ese index, ya que coinciden
-            defaultWorkouts.remove(at: index)
-            wTableView.reloadData()
+            defaultNutrients.remove(at: index)
+            nTableView.reloadData()
         }
     }
+    
     
 }

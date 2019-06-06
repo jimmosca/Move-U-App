@@ -25,8 +25,8 @@ class ExerciseDetailViewController: UIViewController {
     
     @IBAction func deleteTapped(_ sender: UIButton) {
         // create alert
-        let alert = UIAlertController(title: "UIAlertController",
-                                      message: "Would you like to continue learning how to use iOS alerts?",
+        let alert = UIAlertController(title: "Borrar ejercicio",
+                                      message: "Al borrar este ejercicio no podrás volver a acceder a él.¿Estas seguro de querer continuar?",
                                       preferredStyle: UIAlertControllerStyle.alert)
         // add buttons
         alert.addAction(UIAlertAction(title: "Continue",
@@ -93,9 +93,9 @@ class ExerciseDetailViewController: UIViewController {
     }
     
     private func navigateBack() {
-        // Notify delegate to delete this element
+        // Llamamos al metodo borrar del delegado asociado
         delegate?.onDelete(exerciseName: exerciseData?.name)
-        // Navigate back to previous view controller
+        // Llamamos al metodo, adecuado para el tipo de navegacion, para volver a la pantalla anterior
         navigationController?.popViewController(animated: true)
     }
     

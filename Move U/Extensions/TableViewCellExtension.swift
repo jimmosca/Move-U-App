@@ -19,6 +19,7 @@ extension UITableViewCell{
         view?.layer.shadowOffset = CGSize.zero
         view?.layer.shadowRadius = cornerRadius
         view?.layer.shadowOpacity = shadowOpacity
+        view?.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
     }
     
 }

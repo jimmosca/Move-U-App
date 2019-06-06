@@ -30,7 +30,9 @@ class ExerciseViewCell: UITableViewCell{
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         configure(view: eView)
+        
     }
     
     func update(data: Exercise?){

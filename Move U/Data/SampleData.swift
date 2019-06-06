@@ -40,7 +40,7 @@ var defaultWorkouts: [Workout] = [
 
 var defaultNutrients: [Nutrient] = [
                                     Nutrient(name: "Proteina",
-                                             photo: "proteina",
+                                             photo: "protein",
                                              funtion: "Reparadora y energetica",
                                              recomendedQty: "0,8-1,5g por Kg de masa",
                                              calorieGram: 4)

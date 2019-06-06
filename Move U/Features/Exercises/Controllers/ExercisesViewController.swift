@@ -16,7 +16,7 @@ class ExerciseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure(tableView: eTableView)
+        configureTable(tableView: eTableView)
         eTableView.reloadData()
     }
    
@@ -26,14 +26,12 @@ class ExerciseViewController: UIViewController {
             let indexPath = eTableView.indexPath(for: tableViewCell) else {
                 return
         }
-        // Obtenemos el estudiante seleccionado
+        
         let exerciseSelected = defaultExercises[indexPath.row]
         
-        // Primero casteamos el ViewController destino a nuestro ViewController del detalle del estudiante
         if let destinationViewController = segue.destination as? ExerciseDetailViewController{
             // Especificas que esta clase es el delegate del DetailView
             destinationViewController.delegate = self
-            // Segundo al ViewController le pasamos los datos del estudiante seleccionado
             destinationViewController.set(exerciseData: exerciseSelected)
         }
     
@@ -47,7 +45,7 @@ class ExerciseViewController: UIViewController {
 
 extension ExerciseViewController: UITableViewDelegate, UITableViewDataSource{
     
-    private func configure(tableView: UITableView){
+    private func configureTable(tableView: UITableView){
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -77,21 +75,17 @@ extension ExerciseViewController: ExerciseDetailDelegate {
         guard let deletedExerciseName = exerciseName else {
             return
         }
-        
-        removeAll(exerciseName: deletedExerciseName)
-       
-        
-        eTableView.reloadData()
-    }
-    //Funcion sustituta de removeAllWhere de swift 5
-    func removeAll(exerciseName: String) {
-        var count: Int = 0
-        for exercise in defaultExercises {
-            if(exercise.name == exerciseName){
-                defaultExercises.remove(at: count)
-            }
-            count += 1
+        // Creacion de array solo con los nombres
+        let aux = defaultExercises.compactMap{ $0.name }
+        // Obtener el index del nombre que es pasado por parametro
+        let indice = aux.index(of: deletedExerciseName)
+        if let index = indice {
+            // Se borra de la coleccion original el elemento que tiene ese index, ya que coincide
+            defaultExercises.remove(at: index)
+            eTableView.reloadData()
         }
         
     }
+    
+    
 }
