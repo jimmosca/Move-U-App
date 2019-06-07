@@ -9,7 +9,7 @@
 import UIKit
 
 protocol WorkoutDetailDelegate {
-    func onDelete(workoutName: String?)
+    func onDelete()
 }
 
 class WorkoutDetailViewController: UIViewController {
@@ -45,7 +45,6 @@ class WorkoutDetailViewController: UIViewController {
     var delegate: WorkoutDetailDelegate?
     
     
-    // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -88,7 +87,7 @@ class WorkoutDetailViewController: UIViewController {
     
     private func navigateBack() {
         
-        delegate?.onDelete(workoutName: selectedWorkout?.name)
+        delegate?.onDelete()
        
         navigationController?.popViewController(animated: true)
     }
@@ -106,7 +105,7 @@ extension WorkoutDetailViewController: UICollectionViewDelegate, UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WorkoutDetailExerciseViewCell.eIdentifier,
                                                       for: indexPath) as! WorkoutDetailExerciseViewCell
         if let workout = selectedWorkout?.exercises?[indexPath.row] {
-            cell.configureCell(data: workout)
+            cell.update(data: workout)
         }
         
         return cell

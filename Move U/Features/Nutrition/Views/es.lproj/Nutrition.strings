@@ -1,0 +1,60 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2G3-CP-cEf"; */
+"2G3-CP-cEf.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Eliminar"; ObjectID = "APH-47-kr3"; */
+"APH-47-kr3.normalTitle" = "Eliminar";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Cwa-K7-luk"; */
+"Cwa-K7-luk.title" = "Back";
+
+/* Class = "UINavigationItem"; title = " "; ObjectID = "Key-1H-TTg"; */
+"Key-1H-TTg.title" = " ";
+
+/* Class = "UILabel"; text = "Recommended quantity"; ObjectID = "cAJ-fo-qJU"; */
+"cAJ-fo-qJU.text" = "Recommended quantity";
+
+/* Class = "UILabel"; text = "New Nutrient"; ObjectID = "f4b-05-2V3"; */
+"f4b-05-2V3.text" = "New Nutrient";
+
+/* Class = "UILabel"; text = "Calories per gram"; ObjectID = "fgx-ju-FNU"; */
+"fgx-ju-FNU.text" = "Calories per gram";
+
+/* Class = "UILabel"; text = "Function"; ObjectID = "fyj-5o-acE"; */
+"fyj-5o-acE.text" = "Function";
+
+/* Class = "UILabel"; text = "En esta seccion se hace un desglose de los distintos nutrienes que consumimos nuestra dieta habitual, así como una guia para su consumo adecuado."; ObjectID = "iQh-Ah-GUf"; */
+"iQh-Ah-GUf.text" = "En esta seccion se hace un desglose de los distintos nutrienes que consumimos nuestra dieta habitual, así como una guia para su consumo adecuado.";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "krv-XN-fpc"; */
+"krv-XN-fpc.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "lah-pe-8BQ"; */
+"lah-pe-8BQ.text" = "Name";
+
+/* Class = "UILabel"; text = "NutrientName"; ObjectID = "liK-gE-WUs"; */
+"liK-gE-WUs.text" = "NutrientName";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "neF-6l-ulF"; */
+"neF-6l-ulF.title" = "Cancel";
+
+/* Class = "UILabel"; text = "Function"; ObjectID = "pUk-HE-cIC"; */
+"pUk-HE-cIC.text" = "Function";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "s7G-WG-nYg"; */
+"s7G-WG-nYg.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Nutrition"; ObjectID = "sQP-gL-r9T"; */
+"sQP-gL-r9T.title" = "Nutrición";
+
+/* Class = "UILabel"; text = "caloriesPerGram"; ObjectID = "tJY-tL-066"; */
+"tJY-tL-066.text" = "caloriesPerGram";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "u3z-cQ-yXN"; */
+"u3z-cQ-yXN.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wlJ-dH-Zd5"; */
+"wlJ-dH-Zd5.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "z2A-VD-pJE"; */
+"z2A-VD-pJE.normalTitle" = "Guardar";

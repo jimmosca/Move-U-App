@@ -42,7 +42,6 @@ class ExerciseFormViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     func saveExercise(){

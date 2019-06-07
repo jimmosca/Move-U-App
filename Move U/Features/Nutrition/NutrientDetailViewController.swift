@@ -10,7 +10,7 @@ import UIKit
 
 
 protocol NutrientDetailDelegate {
-    func onDelete(nutrientName: String?)
+    func onDelete()
 }
 
 class NutrientDetailViewController: UIViewController {
@@ -94,7 +94,7 @@ class NutrientDetailViewController: UIViewController {
     
     private func navigateBack() {
         // Llamamos al metodo borrar del delegado asociado
-        delegate?.onDelete(nutrientName: nutrientData?.name)
+        delegate?.onDelete()
         // Llamamos al metodo, adecuado para el tipo de navegacion, para volver a la pantalla anterior
         navigationController?.popViewController(animated: true)
     }

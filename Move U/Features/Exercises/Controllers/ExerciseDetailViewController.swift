@@ -10,7 +10,7 @@ import UIKit
 
 
 protocol ExerciseDetailDelegate {
-    func onDelete(exerciseName: String?)
+    func onDelete()
 }
 
 class ExerciseDetailViewController: UIViewController {
@@ -94,7 +94,7 @@ class ExerciseDetailViewController: UIViewController {
     
     private func navigateBack() {
         // Llamamos al metodo borrar del delegado asociado
-        delegate?.onDelete(exerciseName: exerciseData?.name)
+        delegate?.onDelete()
         // Llamamos al metodo, adecuado para el tipo de navegacion, para volver a la pantalla anterior
         navigationController?.popViewController(animated: true)
     }

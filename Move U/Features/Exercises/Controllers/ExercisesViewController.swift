@@ -12,7 +12,7 @@ class ExerciseViewController: UIViewController {
     
     @IBOutlet weak var eTableView: UITableView!
     
-    
+    private var eIndice: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class ExerciseViewController: UIViewController {
         }
         
         let exerciseSelected = defaultExercises[indexPath.row]
-        
+        eIndice = indexPath.row
         if let destinationViewController = segue.destination as? ExerciseDetailViewController{
             // Especificas que esta clase es el delegate del DetailView
             destinationViewController.delegate = self
@@ -71,19 +71,14 @@ extension ExerciseViewController: UITableViewDelegate, UITableViewDataSource{
 }
 // Implementamos el Delegado del DetailView
 extension ExerciseViewController: ExerciseDetailDelegate {
-    func onDelete(exerciseName: String?) {
-        guard let deletedExerciseName = exerciseName else {
-            return
-        }
-        // Creacion de array solo con los nombres
-        let aux = defaultExercises.compactMap{ $0.name }
-        // Obtener el index del nombre que es pasado por parametro
-        let indice = aux.index(of: deletedExerciseName)
-        if let index = indice {
-            // Se borra de la coleccion original el elemento que tiene ese index, ya que coincide
-            defaultExercises.remove(at: index)
+    func onDelete() {
+        
+            guard let indice = eIndice else {
+                return
+            }
+            defaultExercises.remove(at: indice)
             eTableView.reloadData()
-        }
+       
         
     }
     

@@ -19,17 +19,16 @@ class WorkoutDetailExerciseViewCell: UICollectionViewCell {
         eDificulty?.text = ""
     }
     
-    // MARK: - Configure methods -
-    func configureCell(data: Exercise) {
-        configure(name: data.name)
-        configure(dificulty: data.dificulty)
+    func update(data: Exercise) {
+        update(name: data.name)
+        update(dificulty: data.dificulty)
     }
     
-    private func configure(name: String?) {
+    private func update(name: String?) {
         eName?.text = name
     }
     
-    private func configure(dificulty: String?) {
+    private func update(dificulty: String?) {
         eDificulty?.text = dificulty
     }
 }

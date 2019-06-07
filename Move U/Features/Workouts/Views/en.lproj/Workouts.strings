@@ -1,0 +1,60 @@
+
+/* Class = "UILabel"; text = "Objetivo"; ObjectID = "66X-XH-tGu"; */
+"66X-XH-tGu.text" = "Objetivo";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "6V5-x5-I3O"; */
+"6V5-x5-I3O.text" = "Nombre";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "8ea-vS-meF"; */
+"8ea-vS-meF.text" = "Nombre";
+
+/* Class = "UILabel"; text = "New Workout"; ObjectID = "A8t-Fd-Ymm"; */
+"A8t-Fd-Ymm.text" = "New Workout";
+
+/* Class = "UILabel"; text = "Level"; ObjectID = "BY0-RT-hCC"; */
+"BY0-RT-hCC.text" = "Level";
+
+/* Class = "UITabBarItem"; title = "Workouts"; ObjectID = "DOK-pe-IDD"; */
+"DOK-pe-IDD.title" = "Workouts";
+
+/* Class = "UILabel"; text = "Ejercicios"; ObjectID = "IMW-iv-4rm"; */
+"IMW-iv-4rm.text" = "Ejercicios";
+
+/* Class = "UILabel"; text = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"; ObjectID = "J6R-Tu-tTd"; */
+"J6R-Tu-tTd.text" = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "ZBt-Tc-xnq"; */
+"ZBt-Tc-xnq.text" = "Name";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "b1q-7j-9YK"; */
+"b1q-7j-9YK.text" = "Name";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "e0W-Ub-dtu"; */
+"e0W-Ub-dtu.title" = "Cancel";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "eY8-BU-9jJ"; */
+"eY8-BU-9jJ.title" = " ";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "gTk-47-RL0"; */
+"gTk-47-RL0.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "lQO-kg-beP"; */
+"lQO-kg-beP.normalTitle" = "Guardar";
+
+/* Class = "UIButton"; normalTitle = "Eliminar"; ObjectID = "mC1-eB-O0M"; */
+"mC1-eB-O0M.normalTitle" = "Eliminar";
+
+/* Class = "UILabel"; text = "Dificulty"; ObjectID = "mYD-eO-NTq"; */
+"mYD-eO-NTq.text" = "Dificulty";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "rhh-8v-k6x"; */
+"rhh-8v-k6x.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Goal"; ObjectID = "sUU-UQ-bEY"; */
+"sUU-UQ-bEY.text" = "Goal";
+
+/* Class = "UILabel"; text = "Level"; ObjectID = "sac-AA-7iy"; */
+"sac-AA-7iy.text" = "Level";
+
+/* Class = "UILabel"; text = "level"; ObjectID = "y7j-1B-FeW"; */
+"y7j-1B-FeW.text" = "level";

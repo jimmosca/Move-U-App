@@ -12,6 +12,8 @@ class NutrientsViewController: UIViewController {
     
     @IBOutlet weak var nTableView: UITableView!
     
+    private var nIndice: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure(tableView: nTableView)
@@ -24,7 +26,7 @@ class NutrientsViewController: UIViewController {
         }
         
         let nutrientSelected = defaultNutrients[indexPath.row]
-        
+        nIndice = indexPath.row
         if let destinationViewController = segue.destination as? NutrientDetailViewController{
             // Especificas que esta clase es el delegate del DetailView
             destinationViewController.delegate = self
@@ -66,20 +68,12 @@ extension NutrientsViewController: UITableViewDelegate, UITableViewDataSource{
 }
 
 extension NutrientsViewController: NutrientDetailDelegate{
-    func onDelete(nutrientName: String?) {
-        guard let deletedNutrientName = nutrientName else {
+    func onDelete() {
+        guard let indice = nIndice else {
             return
         }
-        
-        // Creacion de array solo con los nombres
-        let aux = defaultNutrients.compactMap{ $0.name }
-        // Obtener el index del nombre que es pasado por parametro
-        let indice = aux.index(of: deletedNutrientName)
-        if let index = indice {
-            // Se borra de la coleccion original el elemento que tiene ese index, ya que coinciden
-            defaultNutrients.remove(at: index)
-            nTableView.reloadData()
-        }
+        defaultNutrients.remove(at: indice)
+        nTableView.reloadData()
     }
     
     

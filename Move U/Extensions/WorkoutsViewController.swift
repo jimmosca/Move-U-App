@@ -12,6 +12,8 @@ class WorkoutsViewController: UIViewController {
     
     @IBOutlet weak var wTableView: UITableView!
     
+    private var wIndice: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure(tableView: wTableView)
@@ -24,7 +26,7 @@ class WorkoutsViewController: UIViewController {
         }
         
         let exerciseSelected = defaultWorkouts[indexPath.row]
-        
+        wIndice = indexPath.row
         if let destinationViewController = segue.destination as? WorkoutDetailViewController{
             // Especificas que esta clase es el delegate del DetailView
             destinationViewController.delegate = self
@@ -67,20 +69,13 @@ extension WorkoutsViewController: UITableViewDelegate, UITableViewDataSource{
 }
 
 extension WorkoutsViewController: WorkoutDetailDelegate{
-    func onDelete(workoutName: String?) {
-        guard let deletedWorkoutName = workoutName else {
+    func onDelete() {
+        guard let indice = wIndice else {
             return
         }
         
-        // Creacion de array solo con los nombres
-        let aux = defaultWorkouts.compactMap{ $0.name }
-        // Obtener el index del nombre que es pasado por parametro
-        let indice = aux.index(of: deletedWorkoutName)
-        if let index = indice {
-            // Se borra de la coleccion original el elemento que tiene ese index, ya que coinciden
-            defaultWorkouts.remove(at: index)
-            wTableView.reloadData()
-        }
+        defaultWorkouts.remove(at: indice)
+        wTableView.reloadData()
     }
     
 }

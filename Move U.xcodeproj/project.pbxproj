@@ -13,10 +13,6 @@
 		C84EDAEF22A6C5DB00211BA2 /* ExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84EDAEE22A6C5DB00211BA2 /* ExerciseDetailViewController.swift */; };
 		C85AAFDD22A82E4F00DE9ED6 /* ExerciseFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85AAFDC22A82E4F00DE9ED6 /* ExerciseFormViewController.swift */; };
 		C86B69B522A5614D008AC0DF /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69B422A5614D008AC0DF /* Exercise.swift */; };
-		C86B69BA22A5648E008AC0DF /* Exercises.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69B922A5648E008AC0DF /* Exercises.storyboard */; };
-		C86B69BF22A56781008AC0DF /* Workouts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69BE22A56781008AC0DF /* Workouts.storyboard */; };
-		C86B69C422A568F5008AC0DF /* Nutrition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69C322A568F5008AC0DF /* Nutrition.storyboard */; };
-		C86B69C922A56953008AC0DF /* Suplements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86B69C822A56953008AC0DF /* Suplements.storyboard */; };
 		C86B69CC22A56DF0008AC0DF /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69CB22A56DF0008AC0DF /* ExercisesViewController.swift */; };
 		C86B69CE22A57644008AC0DF /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69CD22A57644008AC0DF /* Workout.swift */; };
 		C86B69D022A576F8008AC0DF /* Nutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B69CF22A576F8008AC0DF /* Nutrient.swift */; };
@@ -35,6 +31,13 @@
 		C888120A2294235300CA250F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88812082294235300CA250F /* Main.storyboard */; };
 		C888120C2294235700CA250F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C888120B2294235700CA250F /* Assets.xcassets */; };
 		C888120F2294235700CA250F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C888120D2294235700CA250F /* LaunchScreen.storyboard */; };
+		C8AC95D522AAA25100F13B5F /* Exercises.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AC95D722AAA25100F13B5F /* Exercises.storyboard */; };
+		C8AC95DC22AAA29500F13B5F /* Workouts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AC95DE22AAA29500F13B5F /* Workouts.storyboard */; };
+		C8AC95E322AAA2D600F13B5F /* Nutrition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AC95E522AAA2D600F13B5F /* Nutrition.storyboard */; };
+		C8AC95EA22AAA32900F13B5F /* Suplements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AC95EC22AAA32900F13B5F /* Suplements.storyboard */; };
+		C8AC95F222AAA75F00F13B5F /* SuplementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC95F122AAA75F00F13B5F /* SuplementsViewController.swift */; };
+		C8AC95F422AAA9D900F13B5F /* SuplementViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC95F322AAA9D900F13B5F /* SuplementViewCell.swift */; };
+		C8AC95F722AAB24900F13B5F /* SuplementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AC95F622AAB24900F13B5F /* SuplementDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,10 +47,6 @@
 		C84EDAEE22A6C5DB00211BA2 /* ExerciseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailViewController.swift; sourceTree = "<group>"; };
 		C85AAFDC22A82E4F00DE9ED6 /* ExerciseFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseFormViewController.swift; sourceTree = "<group>"; };
 		C86B69B422A5614D008AC0DF /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		C86B69B922A5648E008AC0DF /* Exercises.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercises.storyboard; sourceTree = "<group>"; };
-		C86B69BE22A56781008AC0DF /* Workouts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Workouts.storyboard; sourceTree = "<group>"; };
-		C86B69C322A568F5008AC0DF /* Nutrition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Nutrition.storyboard; sourceTree = "<group>"; };
-		C86B69C822A56953008AC0DF /* Suplements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Suplements.storyboard; sourceTree = "<group>"; };
 		C86B69CB22A56DF0008AC0DF /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
 		C86B69CD22A57644008AC0DF /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		C86B69CF22A576F8008AC0DF /* Nutrient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrient.swift; sourceTree = "<group>"; };
@@ -68,6 +67,21 @@
 		C888120B2294235700CA250F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C888120E2294235700CA250F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C88812102294235700CA250F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8AC95D622AAA25100F13B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Exercises.storyboard; sourceTree = "<group>"; };
+		C8AC95D922AAA25500F13B5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Exercises.strings; sourceTree = "<group>"; };
+		C8AC95DB22AAA25700F13B5F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Exercises.strings; sourceTree = "<group>"; };
+		C8AC95DD22AAA29500F13B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Workouts.storyboard; sourceTree = "<group>"; };
+		C8AC95E022AAA29800F13B5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Workouts.strings; sourceTree = "<group>"; };
+		C8AC95E222AAA29900F13B5F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Workouts.strings; sourceTree = "<group>"; };
+		C8AC95E422AAA2D600F13B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Nutrition.storyboard; sourceTree = "<group>"; };
+		C8AC95E722AAA2F000F13B5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Nutrition.strings; sourceTree = "<group>"; };
+		C8AC95E922AAA2F200F13B5F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Nutrition.strings; sourceTree = "<group>"; };
+		C8AC95EB22AAA32900F13B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Suplements.storyboard; sourceTree = "<group>"; };
+		C8AC95EE22AAA32B00F13B5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Suplements.strings; sourceTree = "<group>"; };
+		C8AC95F022AAA32D00F13B5F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Suplements.strings; sourceTree = "<group>"; };
+		C8AC95F122AAA75F00F13B5F /* SuplementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuplementsViewController.swift; sourceTree = "<group>"; };
+		C8AC95F322AAA9D900F13B5F /* SuplementViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuplementViewCell.swift; sourceTree = "<group>"; };
+		C8AC95F622AAB24900F13B5F /* SuplementDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuplementDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +143,7 @@
 		C86B69B722A5645C008AC0DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C86B69B922A5648E008AC0DF /* Exercises.storyboard */,
+				C8AC95D722AAA25100F13B5F /* Exercises.storyboard */,
 				C86B69CA22A56DB4008AC0DF /* Cells */,
 			);
 			path = Views;
@@ -157,7 +171,7 @@
 		C86B69BC22A56763008AC0DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C86B69BE22A56781008AC0DF /* Workouts.storyboard */,
+				C8AC95DE22AAA29500F13B5F /* Workouts.storyboard */,
 				C84EDAEB22A6A63F00211BA2 /* Cells */,
 			);
 			path = Views;
@@ -186,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				C85AAFDB22A7F8AD00DE9ED6 /* Cells */,
-				C86B69C322A568F5008AC0DF /* Nutrition.storyboard */,
+				C8AC95E522AAA2D600F13B5F /* Nutrition.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,7 +227,8 @@
 		C86B69C622A5693E008AC0DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C86B69C822A56953008AC0DF /* Suplements.storyboard */,
+				C8AC95F522AAB1D300F13B5F /* Cells */,
+				C8AC95EC22AAA32900F13B5F /* Suplements.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +236,8 @@
 		C86B69C722A56943008AC0DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C8AC95F122AAA75F00F13B5F /* SuplementsViewController.swift */,
+				C8AC95F622AAB24900F13B5F /* SuplementDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -341,6 +358,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C8AC95F522AAB1D300F13B5F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C8AC95F322AAA9D900F13B5F /* SuplementViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -383,6 +408,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = C88811F82294235300CA250F;
 			productRefGroup = C88812022294235300CA250F /* Products */;
@@ -400,12 +426,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C888120F2294235700CA250F /* LaunchScreen.storyboard in Resources */,
-				C86B69BF22A56781008AC0DF /* Workouts.storyboard in Resources */,
+				C8AC95DC22AAA29500F13B5F /* Workouts.storyboard in Resources */,
 				C888120C2294235700CA250F /* Assets.xcassets in Resources */,
-				C86B69BA22A5648E008AC0DF /* Exercises.storyboard in Resources */,
+				C8AC95D522AAA25100F13B5F /* Exercises.storyboard in Resources */,
 				C888120A2294235300CA250F /* Main.storyboard in Resources */,
-				C86B69C922A56953008AC0DF /* Suplements.storyboard in Resources */,
-				C86B69C422A568F5008AC0DF /* Nutrition.storyboard in Resources */,
+				C8AC95EA22AAA32900F13B5F /* Suplements.storyboard in Resources */,
+				C8AC95E322AAA2D600F13B5F /* Nutrition.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +455,10 @@
 				C84EDAEA22A69A8900211BA2 /* WorkoutsViewController.swift in Sources */,
 				C86B69CE22A57644008AC0DF /* Workout.swift in Sources */,
 				C86B69D222A577DB008AC0DF /* Suplement.swift in Sources */,
+				C8AC95F722AAB24900F13B5F /* SuplementDetailViewController.swift in Sources */,
+				C8AC95F422AAA9D900F13B5F /* SuplementViewCell.swift in Sources */,
 				C87C06E922A95A2700F437C7 /* NutrientDetailViewController.swift in Sources */,
+				C8AC95F222AAA75F00F13B5F /* SuplementsViewController.swift in Sources */,
 				C87C06E522A9307000F437C7 /* WorkoutDetailViewController.swift in Sources */,
 				C87C06DF22A91BE900F437C7 /* NutrientViewCell.swift in Sources */,
 				C84EDAE822A68DBC00211BA2 /* TableViewCellExtension.swift in Sources */,
@@ -459,6 +488,46 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		C8AC95D722AAA25100F13B5F /* Exercises.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8AC95D622AAA25100F13B5F /* Base */,
+				C8AC95D922AAA25500F13B5F /* en */,
+				C8AC95DB22AAA25700F13B5F /* es */,
+			);
+			name = Exercises.storyboard;
+			sourceTree = "<group>";
+		};
+		C8AC95DE22AAA29500F13B5F /* Workouts.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8AC95DD22AAA29500F13B5F /* Base */,
+				C8AC95E022AAA29800F13B5F /* en */,
+				C8AC95E222AAA29900F13B5F /* es */,
+			);
+			name = Workouts.storyboard;
+			sourceTree = "<group>";
+		};
+		C8AC95E522AAA2D600F13B5F /* Nutrition.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8AC95E422AAA2D600F13B5F /* Base */,
+				C8AC95E722AAA2F000F13B5F /* en */,
+				C8AC95E922AAA2F200F13B5F /* es */,
+			);
+			name = Nutrition.storyboard;
+			sourceTree = "<group>";
+		};
+		C8AC95EC22AAA32900F13B5F /* Suplements.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8AC95EB22AAA32900F13B5F /* Base */,
+				C8AC95EE22AAA32B00F13B5F /* en */,
+				C8AC95F022AAA32D00F13B5F /* es */,
+			);
+			name = Suplements.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -466,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -526,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

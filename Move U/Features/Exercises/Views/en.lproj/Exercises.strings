@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Dificultad"; ObjectID = "2E5-dt-YUF"; */
+"2E5-dt-YUF.text" = "Dificultad";
+
+/* Class = "UILabel"; text = "Nombre Ejercicio"; ObjectID = "9eN-1I-21r"; */
+"9eN-1I-21r.text" = "Nombre Ejercicio";
+
+/* Class = "UILabel"; text = "Area"; ObjectID = "AVZ-oB-gvw"; */
+"AVZ-oB-gvw.text" = "Area";
+
+/* Class = "UILabel"; text = "Dificulty"; ObjectID = "Aik-c2-EjU"; */
+"Aik-c2-EjU.text" = "Dificulty";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "CAQ-OV-DUN"; */
+"CAQ-OV-DUN.text" = "Name";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "Dpi-wx-Sg2"; */
+"Dpi-wx-Sg2.title" = " ";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "GCo-Uk-vYP"; */
+"GCo-Uk-vYP.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "PKk-g1-Vfx"; */
+"PKk-g1-Vfx.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "PMm-lW-oX6"; */
+"PMm-lW-oX6.normalTitle" = "Guardar";
+
+/* Class = "UILabel"; text = "Nombre Ejercicio"; ObjectID = "QM1-OA-T5E"; */
+"QM1-OA-T5E.text" = "Nombre Ejercicio";
+
+/* Class = "UITabBarItem"; title = "Exercises"; ObjectID = "RHj-lF-cB0"; */
+"RHj-lF-cB0.title" = "Exercises";
+
+/* Class = "UILabel"; text = "New Exercise"; ObjectID = "gfh-Ss-aXB"; */
+"gfh-Ss-aXB.text" = "New Exercise";
+
+/* Class = "UILabel"; text = "Dificultad"; ObjectID = "h2F-wt-hnj"; */
+"h2F-wt-hnj.text" = "Dificultad";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "iTj-aq-zE8"; */
+"iTj-aq-zE8.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UIButton"; normalTitle = "Eliminar"; ObjectID = "kAS-re-HwZ"; */
+"kAS-re-HwZ.normalTitle" = "Eliminar";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "rQf-K2-kFx"; */
+"rQf-K2-kFx.title" = "Cancel";
+
+/* Class = "UILabel"; text = "Area"; ObjectID = "xZC-1V-ll6"; */
+"xZC-1V-ll6.text" = "Area";
+
+/* Class = "UILabel"; text = "Area"; ObjectID = "yPS-Ek-vku"; */
+"yPS-Ek-vku.text" = "Area";
